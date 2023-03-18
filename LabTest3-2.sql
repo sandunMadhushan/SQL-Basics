@@ -26,5 +26,5 @@ WHERE AvailableQuantity > 5;
 ALTER TABLE Parts_Order ADD DeliveryDate DATE;
 
 -- Delete all the records pertaining to the parts which are having the available quantity less than or equal to one
-ALTER TABLE Parts_Order ADD DeliveryDate DATE;
+DELETE FROM Part WHERE  AvailableQuantity<=1;
 
